@@ -46,8 +46,8 @@
       </div>
 
       <div class="row">
-        <button class="copy" onclick="copyText('QQ：526530439')">复制 QQ 号</button>
-        <button class="copy" onclick="copyText('P-ID：C4DTWCWB')">复制 P-ID</button>
+        <button class="copy" onclick="copyText('QQ：526530439')">QQ</button>
+        <button class="copy" onclick="copyText('P-ID：C4DTWCWB')">P-ID</button>
       </div>
 
       <footer>© ブブブP · 名刺交換歓迎</footer>
@@ -56,9 +56,10 @@
 
   <script>
     function copyText(t){
-      navigator.clipboard.writeText(t).then(()=>alert("已复制： " + t)).catch(()=>prompt("复制失败，请手动复制：", t));
+      navigator.clipboard.writeText(t).then(()=>alert("Copy： " + t)).catch(()=>prompt("复制失败，请手动复制：", t));
     }
   </script>
 </body>
 
 </html>
+
