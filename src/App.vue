@@ -6,7 +6,7 @@ import fuyuImage from "./assets/idolmaster/fuyu.jpg";
 import mikiImage from "./assets/idolmaster/miki.jpg";
 import rinhaImage from "./assets/idolmaster/0ha.jpg";
 import kazuImage from "./assets/lovelive/kz.jpg";
-import maiImage from "./assets/lovelive/mai.JPG";
+import maiImage from "./assets/lovelive/mai.jpg";
 import kohaneImage from "./assets/miku-stage/khn.png";
 import ioriImage from "./assets/equal-love/iori.jpeg";
 
