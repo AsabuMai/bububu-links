@@ -8,6 +8,15 @@
     content="ブブブＰ 的个人链接主页，集中展示社交平台、简介与兴趣内容。"
   />
   <title>ブブブＰ</title>
+  <script>
+    (function () {
+      var redirect = sessionStorage.getItem("gh-pages-path");
+      if (redirect) {
+        sessionStorage.removeItem("gh-pages-path");
+        history.replaceState(null, "", redirect);
+      }
+    })();
+  </script>
 </head>
 <body>
   <div id="app"></div>

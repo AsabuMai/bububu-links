@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirecting...</title>
+  <script>
+    (function () {
+      var base = "/bububu-links";
+      var path = location.pathname.replace(base, "") || "/";
+      var target = base + path + location.search + location.hash;
+      sessionStorage.setItem("gh-pages-path", target);
+      location.replace(base + "/");
+    })();
+  </script>
+</head>
+<body></body>
+</html>
