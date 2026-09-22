@@ -1,19 +1,19 @@
 <script setup>
 import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import profileImage from "./assets/profile/avatar.webp";
-import kotoneImage from "./assets/idolmaster/KTN.png";
-import fuyuImage from "./assets/idolmaster/fuyu.jpg";
-import mikiImage from "./assets/idolmaster/miki.jpg";
-import rinhaImage from "./assets/idolmaster/0ha.jpg";
-import kazuImage from "./assets/lovelive/kz.jpg";
-import maiImage from "./assets/lovelive/mai.jpg";
-import kohaneImage from "./assets/miku-stage/khn.png";
-import ioriImage from "./assets/equal-love/iori.jpeg";
-import yoasobiImage from "./assets/j-pop/yoasobi.jpeg";
-import higedanImage from "./assets/j-pop/higedan.jpg";
-import vaundyImage from "./assets/j-pop/vaundy.png";
-import zutomayoImage from "./assets/j-pop/zutomayo.jpg";
-import hachiImage from "./assets/j-pop/hachi.jpg";
+import kotoneImage from "./assets/idolmaster/KTN.webp";
+import fuyuImage from "./assets/idolmaster/fuyu.webp";
+import mikiImage from "./assets/idolmaster/miki.webp";
+import rinhaImage from "./assets/idolmaster/0ha.webp";
+import kazuImage from "./assets/lovelive/kz.webp";
+import maiImage from "./assets/lovelive/mai.webp";
+import kohaneImage from "./assets/miku-stage/khn.webp";
+import ioriImage from "./assets/equal-love/iori.webp";
+import yoasobiImage from "./assets/j-pop/yoasobi.webp";
+import higedanImage from "./assets/j-pop/higedan.webp";
+import vaundyImage from "./assets/j-pop/vaundy.webp";
+import zutomayoImage from "./assets/j-pop/zutomayo.webp";
+import hachiImage from "./assets/j-pop/hachi.webp";
 
 const baseUrl = import.meta.env.BASE_URL.endsWith("/")
   ? import.meta.env.BASE_URL
@@ -283,7 +283,6 @@ const topicData = [
         imageLabel: "封面预留 02",
         image: higedanImage,
         imagePosition: "50% 32%",
-        mediaClass: "topic-entry-media-wide",
         text: {
           zh: "被聪哥的高音折服，胡男的歌都太对我口味了,每次去ktv都会唱。喜欢《Pretender》,《115万キロのフィルム》，《Subtitle》,《らしさ》。",
           jp: "聡さんの高音に完全にやられた。ヒゲダンの曲はどれも好みに刺さるし、カラオケに行くたびに歌う。『Pretender』『115万キロのフィルム』『Subtitle』『らしさ』が好き。",
@@ -595,7 +594,7 @@ onBeforeUnmount(() => {
                     :key="entry.imageLabel + entry.text"
                     class="topic-entry"
                   >
-                    <div class="topic-entry-media" :class="entry.mediaClass">
+                    <div class="topic-entry-media">
                       <img
                         v-if="entry.image"
                         class="topic-entry-image"
